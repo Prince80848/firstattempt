@@ -1,16 +1,60 @@
-# React + Vite
+# First Attempt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a full-stack application built with React on the client side and Node.js on the server side. It is designed to provide a seamless user experience for managing test series, enrollments, and more.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Client
+- Built with React and Vite for fast development and performance.
+- Modular component structure for scalability.
+- Pages for user authentication, test series, profile management, and more.
+- Context API for state management.
 
-## React Compiler
+### Server
+- Node.js and Express for backend API development.
+- MongoDB for database management.
+- Authentication and authorization middleware.
+- RESTful API routes for managing users, tests, enrollments, and more.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Prince80848/firstattempt.git
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Navigate to the project directory:
+   ```bash
+   cd firstattempt
+   ```
+
+3. Install dependencies for both client and server:
+   ```bash
+   cd client && npm install
+   cd ../server && npm install
+   ```
+
+4. Start the development servers:
+   ```bash
+   cd client && npm run dev
+   cd ../server && npm start
+   ```
+
+## Contributing
+
+1. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+2. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your feature description"
+   ```
+
+3. Push your branch to the remote repository:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+4. Open a pull request on GitHub.
